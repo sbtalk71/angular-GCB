@@ -9,6 +9,7 @@ import { Demo3Comopnent } from './demo3/demo3.component';
 import { HighlightDirective } from './highlight.directive';
 import { HighlightDirective2 } from './highlight2.directive';
 import { HighlightDirective3 } from './highlight3.directive';
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HighlightDirective3 } from './highlight3.directive';
     Demo3Comopnent,
     HighlightDirective,
     HighlightDirective2,
-    HighlightDirective3
+    HighlightDirective3,
+    CustomPipe
   ],
   imports: [
     BrowserModule,

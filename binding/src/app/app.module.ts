@@ -10,7 +10,10 @@ import {FormsModule} from '@angular/forms';
 import { ContentComponent } from './content/content.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { AttrDirectivesComponent } from './attr-directives/attr-directives.component'
+import { AttrDirectivesComponent } from './attr-directives/attr-directives.component';
+import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective2 } from './highlight2.directive';
+import { HighlightDirective3 } from './highlight3.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { AttrDirectivesComponent } from './attr-directives/attr-directives.compo
     ContentComponent,
     PipesComponent,
     DirectivesComponent,
-    AttrDirectivesComponent
+    AttrDirectivesComponent,
+    HighlightDirective,
+    HighlightDirective2,
+    HighlightDirective3
   ],
   imports: [
     BrowserModule,
