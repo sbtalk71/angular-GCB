@@ -1,0 +1,6 @@
+<h2>Data Received from Parent:</h2>
+<h2>{{parentData}}</h2>
+
+<input type="text" #inputRef>
+
+<button (click)="fireEvent(inputRef.value)">Send Data to Parent</button>

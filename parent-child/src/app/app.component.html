@@ -1,0 +1,6 @@
+<h1>Inter Component Communication Demo</h1>
+
+<app-child [parentData]="dataFromParent" (childEvent)="message=$event"></app-child>
+
+<h2>Data Received from Child</h2>
+<h2>{{message}}</h2>
