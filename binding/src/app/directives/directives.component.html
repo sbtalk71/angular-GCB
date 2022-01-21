@@ -1,0 +1,37 @@
+<h1>Directives Demo</h1>
+<!--
+<h2 *ngIf="isTiger; else notTiger">Tiger</h2>
+-->
+
+
+<div *ngIf="isTiger; then tigerBlock; else notTiger"></div>
+
+<ng-template #tigerBlock>
+    <h2>The Animal is a Tiger</h2>
+</ng-template>
+
+<ng-template #notTiger>
+    <h2>The Animal is not a Tiger</h2>
+</ng-template>
+
+<div *ngFor="let name of names">
+    <h2>{{name}}</h2>
+</div>
+
+<ul>
+    <li *ngFor="let name of names">{{name}}</li>
+</ul>
+
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You Selected Red Color</div>
+    <div *ngSwitchCase="'blue'">You Selected Blue Color</div>
+    <div *ngSwitchCase="'green'">You Selected Green Color</div>
+    <div *ngSwitchCase="'orange'">You Selected Orange Color</div>
+    <div *ngSwitchCase="'magenta'">You Selected Magenta Color</div>
+    <div *ngSwitchCaseDefault>Pick Again</div>
+
+</div>
+
+<button (click)="changeColor(btn1.value)" value="red" #btn1>Red</button>
+<button (click)="changeColor(btn2.value)" value="blue" #btn2>Blue</button>

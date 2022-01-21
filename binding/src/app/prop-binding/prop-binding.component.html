@@ -1,0 +1,18 @@
+<h1>Property Binding</h1>
+
+<input type="text" #inputData >
+
+<input type="text" value="{{name}}" [disabled]="isDisabled" [id]="t1">
+
+<button (click)="enableInput()">{{btn_lable}}</button>
+
+<button (click)="onClick(inputData.value)">Get Value</button><br/>
+<p></p>
+<h1 class="text-success">{{name}}</h1>
+
+<h1 [class]="success">Success</h1>
+<h1 [class.text-error]="hasError">Error</h1>
+<h1 [class.text-styled]="isSpecial">Styled</h1>
+
+
+
