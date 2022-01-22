@@ -10,5 +10,5 @@ export const empdata:Emp[]=[
     {empId:106,name:'Subhash',city:'Hyderabad',salary:78000},
     {empId:107,name:'Murthy',city:'Bangalore',salary:78000},
     {empId:108,name:'Kiran',city:'Chennai',salary:78000},
-    {empId:109,name:'Puran',city:'Hyderabad',salary:78000},
+    {empId:109,name:'Puran',city:'Hyderabad',salary:78000}
 ];
