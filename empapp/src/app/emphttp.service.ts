@@ -12,7 +12,7 @@ export class EmphttpService {
   private url="/assets/data/empdata.json"
   constructor(private _http:HttpClient) { }
 
- public getEmpById(id:number):Observable{
+ public getEmpById(id:number):Observable<Emp>{
    return this._http.get<Emp>(this.url);
  }
 
