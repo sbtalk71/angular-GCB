@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <h1>Student Registration Form</h1>
+  <form #regForm="ngForm" (ngSubmit)="onSubmit()" novalidate *ngIf="!submitted">
+    
+    <div class="from-group mb-3">
+      <label>Name</label>
+      <input type="text" required #studentName="ngModel"  [class.is-invalid]="studentName.invalid && studentName.touched" class="form-control" name="studentName" [(ngModel)]="studentModel.studentName">
+    <small class="error-text" [class.d-none]="studentName.value || studentName.untouched">Name is Required</small>
+    </div>
+
+    {{studentName.dirty}}
+    <div class="from-group mb-3">
+      <label>Email</label>
+      <input type="email" required class="form-control" name="email" [(ngModel)]="studentModel.email">
+    </div>
+    <div class="from-group mb-3">
+      <label>Phone</label>
+      <input type="text" #phone="ngModel" required pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" class="form-control" name="phone" [(ngModel)]="studentModel.phone">
+      <small class="error-text" [class.d-none]="phone.valid || phone.untouched">10digit phone required</small>
+    </div>
+    <div class="from-group mb-3">
+      <select class="custom-select" #courseName="ngModel" name="courseName" [(ngModel)]="studentModel.courseName" (blur)="validateCourse(courseName.value)" (change)="validateCourse(courseName.value)"
+      [class.is-invalid]="hasError && courseName.touched">
+        <option value="defualt">Register Me for</option>
+        <option *ngFor="let course of courses">{{course}}</option>
+      </select>
+      <small class="error-text" [class.d-none]="!hasError || courseName.untouched">Please select a Course</small>
+    </div>
+    <div class="form-group mb-3">
+      <label>Selected Time Slot</label>
+      <div class="form-check">
+        <input type="radio" name="slot" value="morning" class="form-check-input" [(ngModel)]="studentModel.slot">
+        <label class="form-check-label">Morning (8AM-12PM)</label>
+      </div>
+      <div class="form-check mb-3">
+        <input type="radio" name="slot" value="evening" class="form-check-input" [(ngModel)]="studentModel.slot">
+        <label class="form-check-label">Evening (5PM-8PM)</label>
+      </div>
+    </div>
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" name="notify" [(ngModel)]="studentModel.notify">
+      <label class="form-check-label">Notify Me</label>
+    </div>
+    <button class="btn btn-primary" [disabled]="regForm.form.invalid || hasError">Register</button>
+  </form>
+  <div *ngIf="submitted">
+    <h2>{{message}}</h2>
+  </div>
+</div>
