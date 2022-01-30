@@ -1,0 +1,14 @@
+<h1>It works</h1>
+<p>
+<button (click)="toggle()">Toggle Div</button>
+</p>
+<div *ngIf="showDiv" [@flyInOut]>
+FLYINOUT
+</div>
+<p>
+<button (click)='animateNow()'>Animate Text</button>
+</p>
+<h1 [@toggleView]="visibility">Text for show hide Animation</h1>
+
+
+
