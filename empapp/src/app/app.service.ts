@@ -7,7 +7,7 @@ import { empdata } from './empdata';
 })
 export class AppService {
 
-  private foundEmp!: Emp;// = { empId: 109, name: 'Puran', city: 'Hyderabad', salary: 78000 };
+  private foundEmp:Emp;// = { empId: 109, name: 'Puran', city: 'Hyderabad', salary: 78000 };
   constructor() { }
 
   public getEmpList(): Emp[] {

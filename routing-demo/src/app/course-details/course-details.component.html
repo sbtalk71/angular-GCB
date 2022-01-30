@@ -1,0 +1,16 @@
+<p>
+    <button (click)="getFees()">Course Fee</button>
+    <button (click)="contactInfo()">Contact</button>
+</p>
+
+<p>You Selected Course with Id {{selectedId}}</p>
+
+<p>
+    <button (click)="goPrevious()">Previous</button>
+    <button (click)="goNext()">Next</button>
+</p>
+<p>
+    <button (click)="goToCourse()">Back</button>
+</p>
+
+<router-outlet></router-outlet>
