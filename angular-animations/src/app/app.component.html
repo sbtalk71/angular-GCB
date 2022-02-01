@@ -1,0 +1,21 @@
+<h1>Animations</h1>
+<p>
+  <button (click)="toggel()">Toggle</button>
+</p>
+<div [@openClose]="state" class="open-close-container">
+  <p>The Box </p>
+</div>
+
+<p>
+  <button (click)="activateFly()">Animate Text</button>
+</p>
+  <div *ngIf="showDiv" [@flyInOut]>
+    <h2>FLYINOUT</h2>
+  </div>
+
+  <p>
+    <button (click)="doRotate()">Animate Text</button>
+  </p>
+  <div [@rotate]="flag">
+    <h2>FLYINOUT</h2>
+  </div>
