@@ -1,0 +1,27 @@
+Mini Project for Assessment
+
+1. Create an angular application named customer-portal.
+2. The application should have:
+	a0) A main page as dashboard with a title and 3 menu items (List Customers,Overview, Contact)
+	a) when you click List Customers all the customers by custometId and Name should be listed.
+	b) each customer is a clickable row.
+	c) when you click a customer it should display all the details of that customer in a separate component.
+	d)To implement the Project:
+		1. Use HttpClient to read the customers.json file
+		2. Use Routing
+		3. Use Angular Service
+		4. Write test cases for one Comopnent and Service
+		
+3. save the given data as customers.json.
+[
+    {"customerId":100,"customerName":"vikas","shippingAddress":"Bangalore","orderItem":"Mobile","price":45000},
+    {"customerId":101,"customerName":"Shantanu","shippingAddress":"Bangalore","orderItem":"Laptop","price":45000},
+    {"customerId":102,"customerName":"Kaluuram","shippingAddress":"Bangalore","orderItem":"Mixer Grinder","price":45000},
+    {"customerId":103,"customerName":"Govinda","shippingAddress":"Bangalore","orderItem":"Mobile","price":45000},
+    {"customerId":104,"customerName":"Raja","shippingAddress":"Bangalore","orderItem":"Camera","price":45000},
+    {"customerId":105,"customerName":"Namitha","shippingAddress":"Bangalore","orderItem":"Mobile","price":45000},
+    {"customerId":106,"customerName":"Nikki","shippingAddress":"Bangalore","orderItem":"Laptop","price":45000},
+    {"customerId":107,"customerName":"Ranga","shippingAddress":"Bangalore","orderItem":"TV","price":45000}
+
+
+]

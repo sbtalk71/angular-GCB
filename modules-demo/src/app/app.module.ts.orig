@@ -1,0 +1,42 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+<<<<<<< HEAD
+import { UsersComponent } from './users/users.component';
+=======
+import { ViewsModule } from './views/views.module';
+
+>>>>>>> ea445da8d5d9bac042815dfb46746a6ad71bd2b0
+
+@NgModule({
+  declarations: [
+    AppComponent,
+<<<<<<< HEAD
+    UsersComponent
+=======
+  
+>>>>>>> ea445da8d5d9bac042815dfb46746a6ad71bd2b0
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+<<<<<<< HEAD
+=======
+    ViewsModule
+>>>>>>> ea445da8d5d9bac042815dfb46746a6ad71bd2b0
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+<<<<<<< HEAD
+export class AppModule {
+
+  constructor(){
+    console.log("App Module loaded");
+  }
+ }
+=======
+export class AppModule { }
+>>>>>>> ea445da8d5d9bac042815dfb46746a6ad71bd2b0

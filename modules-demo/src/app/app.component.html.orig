@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+<h1>Stores Application</h1>
+<nav>
+  <a routerLink="/users">Users</a>
+  <a routerLink="/stores">Stores</a>
+</nav>
+<p></p>
+<router-outlet></router-outlet>
+=======
+<app-top></app-top>
+<app-left></app-left>
+<app-bottom></app-bottom>
+<app-content></app-content>
+>>>>>>> ea445da8d5d9bac042815dfb46746a6ad71bd2b0
